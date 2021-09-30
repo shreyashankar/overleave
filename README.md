@@ -9,7 +9,7 @@ Features:
 
 ## Setup
 
-You can download the latest release from the Chrome extension store. To run in developer mode, you can:
+You can download the latest release from the Chrome extension store (TODO). To run in developer mode, you can:
 
 1. Clone this repository
 2. Navigate to [chrome://extensions/](chrome://extensions/)
