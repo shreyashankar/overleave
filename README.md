@@ -12,7 +12,7 @@ Features:
 You can download the latest release from the Chrome extension store. To run in developer mode, you can:
 
 1. Clone this repository
-2. Navigate to [chrome://extensions/](chrome://extensions/)
+2. Navigate to (chrome://extensions/)[chrome://extensions/]
 3. Enable the "Developer mode" switch in the top right
 4. Click "Load Unpacked" in the left hand side
 5. Upload the project
