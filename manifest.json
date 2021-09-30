@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Overleave",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.overleaf.com/project/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "64": "icon64.png",
+        "128": "icon128.png"
+    }
+}
