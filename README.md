@@ -11,7 +11,7 @@ Features:
 
 ## Setup
 
-You can download the latest release from the Chrome extension store (TODO). To run in developer mode, you can:
+You can run the extension in any chromium based web browser. To run in developer mode, you can:
 
 1. Clone this repository
 2. Navigate to [chrome://extensions/](chrome://extensions/)
@@ -19,6 +19,14 @@ You can download the latest release from the Chrome extension store (TODO). To r
 4. Click "Load Unpacked" in the left hand side
 5. Upload the project
 
-## Contributing
+## Next Improvements 
+
+* availabiity in Chrome for overleave extension.
+* availability in Edge for overleave extension.
+* Better UI with activation.
+* Guidelines in the UI for usability.
+* Link to overleaf for productivity.
+
+## Contributors
 
 jmauro - mauroalejandrojm
