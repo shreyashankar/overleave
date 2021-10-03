@@ -1,7 +1,8 @@
 {
     "manifest_version": 2,
     "name": "Overleave",
-    "version": "0.1",
+    "description":"Hot reload extension for overleaf to use compiler and text editor in different windows.",
+    "version": "0.0.2",
     "content_scripts": [
         {
             "matches": [
@@ -13,8 +14,8 @@
         }
     ],
     "icons": {
-        "16": "icon.png",
-        "64": "icon64.png",
-        "128": "icon128.png"
+        "16": "icons/icon-16x16.png",
+        "32": "icons/icon-32x32.png",
+        "150": "icons/icon-150x150.png"
     }
 }
