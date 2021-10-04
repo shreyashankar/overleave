@@ -53,9 +53,9 @@ button:hover {
     display: grid;
     align-items: center;
     text-align: center;
-    width: 240px;
+    width: 260px;
     height: 32px;
-    margin-left: 26px;
+    margin-left: 40px;
 }
 
 #title {
