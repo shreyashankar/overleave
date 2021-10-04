@@ -1,6 +1,33 @@
-var oldURL = "";
-var newURL = "";
-var w = window.open(oldURL, "_blank");
+var oldURL = sessionStorage.getItem("oldURL");
+var newURL = sessionStorage.getItem("newURL");
+    if (oldURL === null && newURL === null) { 
+        oldURL="";
+        newURL="";
+        var w = window.open('', "_overleave");
+    }
+    else {
+        oldURL = oldURL;
+        newURL = newURL;
+        var w = window.open(newURL, "_overleave");
+    }
+
+window.onload = function() {
+    var oldURL = sessionStorage.getItem("oldURL");
+    var newURL = sessionStorage.getItem("newURL");
+    if (oldURL === null && newURL === null) { 
+        oldURL="";
+        newURL="";
+    }
+    else {
+        oldURL = oldURL;
+        newURL = newURL;
+    }
+}
+
+window.onbeforeunload = function() {
+    sessionStorage.setItem("oldURL", oldURL);
+    sessionStorage.setItem("newURL",newURL);
+}
 
 function updateWindow(elem) {
     newURL = elem.href.slice(0, -19);
@@ -32,10 +59,9 @@ function waitForBuild() {
                 }
             }
 
-        }, 500);
+        }, 250);
     });
 }
-
 
 waitForBuild().then((elem) => {
 
