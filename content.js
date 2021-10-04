@@ -1,22 +1,22 @@
 var oldURL = sessionStorage.getItem("oldURL");
 var newURL = sessionStorage.getItem("newURL");
-    if (oldURL === null && newURL === null) { 
-        oldURL="";
-        newURL="";
-        var w = window.open('', "_overleave");
-    }
-    else {
-        oldURL = oldURL;
-        newURL = newURL;
-        var w = window.open(newURL, "_overleave");
-    }
+if (oldURL === null && newURL === null) {
+    oldURL = "";
+    newURL = "";
+    var w = window.open('', "_overleave");
+}
+else {
+    oldURL = oldURL;
+    newURL = newURL;
+    var w = window.open(newURL, "_overleave");
+}
 
-window.onload = function() {
+window.onload = function () {
     var oldURL = sessionStorage.getItem("oldURL");
     var newURL = sessionStorage.getItem("newURL");
-    if (oldURL === null && newURL === null) { 
-        oldURL="";
-        newURL="";
+    if (oldURL === null && newURL === null) {
+        oldURL = "";
+        newURL = "";
     }
     else {
         oldURL = oldURL;
@@ -24,9 +24,9 @@ window.onload = function() {
     }
 }
 
-window.onbeforeunload = function() {
+window.onbeforeunload = function () {
     sessionStorage.setItem("oldURL", oldURL);
-    sessionStorage.setItem("newURL",newURL);
+    sessionStorage.setItem("newURL", newURL);
 }
 
 function updateWindow(elem) {
