@@ -48,7 +48,7 @@ function waitForBuild() {
             }
 
             const matches = document.body.getElementsByTagName("a");
-
+            
             for (const match of matches) {
                 let url = JSON.stringify(match.href);
                 if (url.includes("build") && url.includes("pdf") && url.includes("download")) {
