@@ -6,7 +6,6 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>",
                 "https://*.overleaf.com/project/*"
             ],
             "js": [
@@ -21,5 +20,8 @@
         "16": "icons/icon-16x16.png",
         "32": "icons/icon-32x32.png",
         "150": "icons/icon-150x150.png"
-    }
+    },
+    "permissions": [
+        "tabs"
+      ]
 }

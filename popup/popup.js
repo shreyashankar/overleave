@@ -20,13 +20,18 @@ document.addEventListener('DOMContentLoaded', function () {
     function onclick_checkbox () {
       chrome.tabs.query({currentWindow: true, active: true}, 
         function (tabs) {
-            chrome.tabs.sendMessage(tabs[0].id, 'testing toggle click')
-            toggle_status=localStorage.getItem("toggle_status");
-            if (toggle_status=='false') {
-              localStorage.setItem("toggle_status",'true');
-            }
-            else {
-              localStorage.setItem("toggle_status",'false');
+            url = tabs[0].url
+            url = url.match("https://www.overleaf.com/project/*");
+            if (url!==null) {
+              toggle_status=localStorage.getItem("toggle_status");
+              if (toggle_status=='false') {
+                localStorage.setItem("toggle_status",'true');
+                chrome.tabs.sendMessage(tabs[0].id, 'true');
+              }
+              else {
+                localStorage.setItem("toggle_status",'false');
+                chrome.tabs.sendMessage(tabs[0].id, 'false');
+              }
             }
       })
     }
