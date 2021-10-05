@@ -84,4 +84,13 @@
 
 chrome.runtime.onMessage.addListener(function(request) {
     console.log(request)
+    if (request=='projects') {
+        // toggle_status=localStorage.getItem("toggle_status");
+        window.open("https://www.overleaf.com/project", "_self");
+    }
+    if (request=='new_project') {
+        // <a class="btn btn-primary sidebar-new-proj-btn dropdown-toggle" href="#" data-toggle="dropdown" dropdown-toggle="" aria-haspopup="true" aria-expanded="true">New Project</a>
+        // new_project_button.click();
+        window.open("https://www.overleaf.com/docs?snip_uri=https://production-overleaf-static.s3.amazonaws.com/examples/helloworld.tex", "_blank")
+    }
 })

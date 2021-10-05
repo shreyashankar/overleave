@@ -13,10 +13,11 @@ else {
 
 document.addEventListener('DOMContentLoaded', function () {
     
-    document.getElementById("checkbox").addEventListener('click', onclick, false)
+    document.getElementById("checkbox").addEventListener('click', onclick_checkbox, false)
+    document.getElementById("button_1").addEventListener('click', onclick_left, false)
+    document.getElementById("button_2").addEventListener('click',onclick_right,false)
 
-    function onclick () {
-      
+    function onclick_checkbox () {
       chrome.tabs.query({currentWindow: true, active: true}, 
         function (tabs) {
             chrome.tabs.sendMessage(tabs[0].id, 'testing toggle click')
@@ -27,6 +28,20 @@ document.addEventListener('DOMContentLoaded', function () {
             else {
               localStorage.setItem("toggle_status",'false');
             }
+      })
+    }
+
+    function onclick_left () {
+      chrome.tabs.query({currentWindow: true, active: true}, 
+        function (tabs) {
+            chrome.tabs.sendMessage(tabs[0].id, 'new_project')
+      })
+    }
+
+    function onclick_right () {
+      chrome.tabs.query({currentWindow: true, active: true}, 
+        function (tabs) {
+            chrome.tabs.sendMessage(tabs[0].id, 'projects')
       })
     }
   }, false)
