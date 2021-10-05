@@ -21,7 +21,8 @@ button {
     opacity: 70%;
     font-weight: bold;
     font-size: 14px;
-    font-family: montserrat;
+    font-weight: 600;
+    font-family: system-ui, sans-serif;
     width: 110px;
     border: transparent;
     background-color: transparent;
@@ -60,13 +61,13 @@ button:hover {
 
 #title {
     font-size: 32px;
-    font-family: montserrat;
+    font-family: system-ui, sans-serif;
     font-weight: 500;
 }
 
 #subtitle {
     font-size: 20px;
-    font-family: montserrat;
+    font-family: system-ui, sans-serif;
     font-weight: 200;
 }
 #sub-title1 {
@@ -83,8 +84,8 @@ button:hover {
 }
 
 #item {
-    font-size: 14px;
-    font-family: montserrat;
+    font-size: 16px;
+    font-family: system-ui, sans-serif;
     font-weight: 100;
     text-align: left;
     text-justify: inter-word;
