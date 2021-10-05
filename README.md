@@ -6,8 +6,8 @@ This project is a Chrome extension that, when in an Overleaf project, opens the 
 
 Features:
 
-* Supports private Overleaf projects
-* Automatically rerenders pdf when the Overleaf project recompiles
+* Supports private Overleaf projects.
+* Automatically rerenders pdf when the Overleaf project recompiles.
 
 ## Setup
 
@@ -21,11 +21,10 @@ You can run the extension in any chromium based web browser. To run in developer
 
 ## Next Improvements 
 
+* Fix glitches in the toggle due to ghost clicks in toggle.
 * Availabiity in Chrome for overleave extension.
 * Availability in Edge for overleave extension.
-* Better UI with activation.
 * Guidelines in the UI for usability.
-* Link to overleaf for productivity.
 
 ## Contributors
 

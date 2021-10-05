@@ -23,7 +23,7 @@ window.onload = function() {
     var newURL = sessionStorage.getItem("newURL");
     var popup_toggle = localStorage.getItem("toggle_status");
     localStorage.setItem("toggle_status",popup_toggle);
-    
+
     if (oldURL === null && newURL === null) { 
         oldURL = "";
         newURL = "";
@@ -98,7 +98,6 @@ waitForBuild().then((elem) => {
 });
 
 chrome.runtime.onMessage.addListener(function(request) {
-    console.log(request)
     if (request=='true') {
         localStorage.setItem("toggle_status",'true');
     }

@@ -1,7 +1,4 @@
 toggle_status=localStorage.getItem("toggle_status");
-console.log("initial toggle status")
-console.log(toggle_status)
-
 const toggle_element = document.getElementById("input");
 if ((toggle_status===null)||(toggle_status=='false')) {
     toggle_status='false'
