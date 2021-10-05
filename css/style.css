@@ -1,13 +1,3 @@
-/* head {
-    width: 300px;
-    margin: auto;
-    border: 2px transparent;
-}
-
-.title {
-    text-align: center;
-} */
-
 body {
     height: 220px;
     width: 260px;
@@ -26,6 +16,7 @@ button {
     width: 110px;
     border: transparent;
     background-color: transparent;
+    display: block;
 }
 
 #button_2 {
@@ -35,7 +26,6 @@ button:hover {
     color: #138A07;
     opacity: 100%;
 }
-
 
 .icon {
     background: url("../icons/icon-32x32.png");
@@ -56,7 +46,7 @@ button:hover {
     text-align: center;
     width: 260px;
     height: 32px;
-    margin-left: 40px;
+    margin-left: 36px;
 }
 
 #title {
@@ -73,14 +63,13 @@ button:hover {
 #sub-title1 {
     margin-top: -10px;
     margin-bottom: -30px;
+    font-family: system-ui, sans-serif;
 }
 #sub-title2 {
     margin-top: -0px;
-
-}
-#sub-title2 {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: system-ui, sans-serif;
 }
 
 #item {

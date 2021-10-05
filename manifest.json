@@ -2,15 +2,16 @@
     "manifest_version": 2,
     "name": "Overleave",
     "description":"Hot reload extension for overleaf to use compiler and text editor in different windows.",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "content_scripts": [
         {
-            "matches": [
-                "https://*.overleaf.com/project/*"
-            ],
-            "js": [
-                "content.js"
-            ]
+            "matches": ["https://*.overleaf.com/project/*"],
+            "js": ["javascript/content.js"]
+        },
+        {
+            "matches": ["<all_urls>"],
+            "match_about_blank": true,
+            "js": ["javascript/listener.js"]
         }
     ],
     "browser_action": {
@@ -21,7 +22,5 @@
         "32": "icons/icon-32x32.png",
         "150": "icons/icon-150x150.png"
     },
-    "permissions": [
-        "tabs"
-      ]
+    "permissions": ["activeTab"]
 }

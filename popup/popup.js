@@ -1,8 +1,8 @@
 toggle_status=localStorage.getItem("toggle_status");
 const toggle_element = document.getElementById("input");
-if ((toggle_status===null)||(toggle_status=='false')) {
-    toggle_status='false'
-    toggle_element.checked=""
+if ( (toggle_status===null) || (toggle_status=='false') ) {
+    toggle_status = 'false'
+    toggle_element.checked = ""
 }
 else {
   toggle_element.checked=toggle_status
@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (url!==null) {
               toggle_status=localStorage.getItem("toggle_status");
               if (toggle_status=='false') {
-                localStorage.setItem("toggle_status",'true');
+                localStorage.setItem("toggle_status", 'true');
                 chrome.tabs.sendMessage(tabs[0].id, 'true');
               }
               else {
-                localStorage.setItem("toggle_status",'false');
+                localStorage.setItem("toggle_status", 'false');
                 chrome.tabs.sendMessage(tabs[0].id, 'false');
               }
             }

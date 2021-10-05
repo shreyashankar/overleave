@@ -39,7 +39,6 @@ window.onbeforeunload = function() {
     localStorage.setItem("toggle_status",popup_toggle);
     sessionStorage.setItem("oldURL", oldURL);
     sessionStorage.setItem("newURL",newURL);
-    
 }
 
 function updateWindow(elem) {
@@ -70,6 +69,7 @@ function waitForBuild() {
                     clearInterval(checkExist);
                     updateWindow(match); 
                     resolve(match);
+                    console.log("updating condition by pattern match")
                     break;
                 }
             }
@@ -96,20 +96,3 @@ waitForBuild().then((elem) => {
     //TODO(shreyashankar): do something better here
     console.log(err);
 });
-
-chrome.runtime.onMessage.addListener(function(request) {
-    if (request=='true') {
-        localStorage.setItem("toggle_status",'true');
-    }
-    if (request=='false') {
-        localStorage.setItem("toggle_status",'false');
-    }
-    if (request=='projects') {
-        // toggle_status=localStorage.getItem("toggle_status");
-        window.open("https://www.overleaf.com/project", "_self");
-    }
-    if (request=='new_project') {
-        // new_project_button.click();
-        window.open("https://www.overleaf.com/docs?snip_uri=https://production-overleaf-static.s3.amazonaws.com/examples/helloworld.tex", "_blank")
-    }
-})
