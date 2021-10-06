@@ -1,6 +1,6 @@
 # Overleave
 
-Hot reload extension for overleaf to use compiler and text editor in different windows.
+Hot reload extension for Overleaf to use compiler and text editor in different windows.
 
 This project is a Chrome extension that, when in an Overleaf project, opens the compiled pdf in a new tab. I built this because I prefer the local TeX experience where I can typeset in one window and leave the compiled pdf in another window; however, Overleaf doesn't have this functionality.
 
@@ -9,7 +9,7 @@ Key Features:
 * Split view for multiple Windows.
 ![Multitab View](https://github.com/mauroalejandrojm/overleave/blob/master/docs/Multitab.png)
 
-* Boost your productivity with overleave.
+* Boost your productivity with Overleave.
 ![Second Display](https://github.com/mauroalejandrojm/overleave/blob/master/docs/SecondDisplay.png)
 
 * Minimalistic Interface and Usability shortcuts.
@@ -28,8 +28,8 @@ You can run the extension in any chromium based web browser. To run in developer
 ## Next Improvements 
 
 * Fix glitches in the toggle due to missing clicks.
-* Availabiity in Chrome for overleave extension.
-* Availability in Edge for overleave extension.
+* Availabiity in Chrome for Overleave extension.
+* Availability in Edge for Overleave extension.
 * Guidelines in the UI for usability.
 
 ## Contributors
