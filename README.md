@@ -10,7 +10,7 @@ Key Features:
 ![Multitab View](https://github.com/mauroalejandrojm/overleave/blob/master/docs/Multitab.png)
 
 * Boost your productivity with overleave.
-![Second Display](https://github.com/mauroalejandrojm/overleave/blob/master/docs/SencondDisplay.png)
+![Second Display](https://github.com/mauroalejandrojm/overleave/blob/master/docs/SecondDisplay.png)
 
 * Minimalistic Interface and Usability shortcuts.
 ![Shortcuts](https://github.com/mauroalejandrojm/overleave/blob/master/docs/Shortcuts.png)
