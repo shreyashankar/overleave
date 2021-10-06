@@ -28,7 +28,7 @@ You can run the extension in any chromium based web browser. To run in developer
 ## Next Improvements 
 
 * Fix glitches in the toggle due to missing clicks.
-* Availabiity in Chrome for Overleave extension.
+* Availability in Chrome for Overleave extension.
 * Availability in Edge for Overleave extension.
 * Guidelines in the UI for usability.
 
