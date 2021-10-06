@@ -7,13 +7,13 @@ This project is a Chrome extension that, when in an Overleaf project, opens the 
 Key Features:
 
 * Split view for multiple Windows.
-[Multitab View](./docs/Multitab.png)
+[Multitab View](https://github.com/mauroalejandrojm/overleave/blob/master/docs/Multitab.png)
 
 * Boost your productivity with overleave.
-[Second Display](./docs/SencondDisplay.png)
+[Second Display](https://github.com/mauroalejandrojm/overleave/blob/master/docs/SencondDisplay.png)
 
 * Minimalistic Interface and Usability shortcuts.
-[Shortcuts](./docs/Shortcuts.png)
+[Shortcuts](https://github.com/mauroalejandrojm/overleave/blob/master/docs/Shortcuts.png)
 
 ## Setup
 
