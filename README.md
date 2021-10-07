@@ -29,7 +29,7 @@ You can run the extension in any chromium based web browser. To run in developer
 
 If you are using the Overleave extension, but everytime you update your project the PDF gets download follow this steps:
 
-### Google Chrome
+#### Google Chrome
 1. Open the Google Chrome settings.
 2. Look for the "Privacy and security" section in the navigation bar.
 3. Click under the "Site Settings" option and click it.
@@ -38,7 +38,7 @@ If you are using the Overleave extension, but everytime you update your project 
 6. Click under the "PDF documents" option.
 7. Select the "Open PDFs in Chrome" option.
 
-### Microsoft Edge
+#### Microsoft Edge
 1. Open the Microsoft Edge settings.
 2. Look for the "Cookies and Site permissions" section in the navigation bar.
 3. Scroll down and look for the "PDF documents" option and click it.
