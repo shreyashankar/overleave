@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Overleave",
-    "description":"Hot reload extension for overleaf to use the text editor and compiler in different windows.",
+    "description":"Hot reload extension for overleaf to use the text editor and PDF compiler in different windows.",
     "version": "0.0.6",
     "content_scripts": [
         {
