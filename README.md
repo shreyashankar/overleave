@@ -48,7 +48,6 @@ If you are using the Overleave extension, but everytime you update your project 
 
 * Fix glitches in the toggle due to missing clicks.
 * Availability in Chrome for Overleave extension.
-* Availability in Edge for Overleave extension.
 * Guidelines in the UI for usability.
 
 ## Contributors
