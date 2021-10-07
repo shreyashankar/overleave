@@ -25,6 +25,25 @@ You can run the extension in any chromium based web browser. To run in developer
 4. Click "Load Unpacked" in the left hand side
 5. Upload the project
 
+## Troubleshootting
+
+If you are using the Overleave extension, but everytime you update your project the PDF gets download follow this steps:
+
+### Google Chrome
+1. Open the Google Chrome settings.
+2. Look for the "Privacy and security" section in the navigation bar.
+3. Click under the "Site Settings" option and click it.
+4. Scroll down and look for the "Content" Section.
+5. Click under the "Additional content settings" option.
+6. Click under the "PDF documents" option.
+7. Select the "Open PDFs in Chrome" option.
+
+### Microsoft Edge
+1. Open the Microsoft Edge settings.
+2. Look for the "Cookies and Site permissions" section in the navigation bar.
+3. Scroll down and look for the "PDF documents" option and click it.
+4. Deactivate the "Always download PDF files" option by clicking the toggle.
+
 ## Next Improvements 
 
 * Fix glitches in the toggle due to missing clicks.

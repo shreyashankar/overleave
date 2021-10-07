@@ -24,10 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
               if (toggle_status=='false') {
                 localStorage.setItem("toggle_status", 'true');
                 chrome.tabs.sendMessage(tabs[0].id, 'true');
+                chrome.browserAction.setIcon({path:'../icons/overleave-active.png'});
               }
               else {
                 localStorage.setItem("toggle_status", 'false');
                 chrome.tabs.sendMessage(tabs[0].id, 'false');
+                chrome.browserAction.setIcon({path:'../icons/icon-16x16.png'});
               }
             }
       })

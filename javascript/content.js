@@ -69,7 +69,6 @@ function waitForBuild() {
                     clearInterval(checkExist);
                     updateWindow(match); 
                     resolve(match);
-                    console.log("updating condition by pattern match")
                     break;
                 }
             }
