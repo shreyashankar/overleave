@@ -5,6 +5,7 @@ if (popup_toggle === null) {
 
 var oldURL = sessionStorage.getItem("oldURL");
 var newURL = sessionStorage.getItem("newURL");
+<<<<<<< HEAD:javascript/content.js
 if (popup_toggle == 'true') {
     if (oldURL === null && newURL === null) { 
         oldURL = "";
@@ -16,15 +17,30 @@ if (popup_toggle == 'true') {
         newURL = newURL;
         var w = window.open(newURL, "_overleave");
     }
+=======
+if (oldURL === null && newURL === null) {
+    oldURL = "";
+    newURL = "";
+    var w = window.open('', "_overleave");
+}
+else {
+    oldURL = oldURL;
+    newURL = newURL;
+    var w = window.open(newURL, "_overleave");
+>>>>>>> shreyashankar/master:content.js
 }
 
-window.onload = function() {
+window.onload = function () {
     var oldURL = sessionStorage.getItem("oldURL");
     var newURL = sessionStorage.getItem("newURL");
+<<<<<<< HEAD:javascript/content.js
     var popup_toggle = localStorage.getItem("toggle_status");
     localStorage.setItem("toggle_status",popup_toggle);
 
     if (oldURL === null && newURL === null) { 
+=======
+    if (oldURL === null && newURL === null) {
+>>>>>>> shreyashankar/master:content.js
         oldURL = "";
         newURL = "";
     }
@@ -34,11 +50,15 @@ window.onload = function() {
     }
 }
 
+<<<<<<< HEAD:javascript/content.js
 window.onbeforeunload = function() {
     var popup_toggle = localStorage.getItem("toggle_status");
     localStorage.setItem("toggle_status",popup_toggle);
+=======
+window.onbeforeunload = function () {
+>>>>>>> shreyashankar/master:content.js
     sessionStorage.setItem("oldURL", oldURL);
-    sessionStorage.setItem("newURL",newURL);
+    sessionStorage.setItem("newURL", newURL);
 }
 
 function updateWindow(elem) {
